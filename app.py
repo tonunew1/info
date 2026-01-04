@@ -46,7 +46,7 @@ async def json_to_proto(json_data: str, proto_message: Message) -> bytes:
 
 def get_account_credentials() -> str:
     # শুধু BD এর UID + password
-    return "uid=4309154009&password=93848D86253B465C63271A26D0C5EBA1AFD3121F7C9943243419E27DE2ED81A3"
+    return "uid=4165888395&password=702A2911C4875909B1440F6F835D8CAD81242CA3AF6F0FC2A9F6BBE65B726CCC"
 
 # === Token Generation ===
 async def get_access_token(account: str):
@@ -197,6 +197,7 @@ if __name__ == '__main__':
 
     # Flask চালু
     app.run(host='0.0.0.0', port=5000, debug=True)
+
 
 
 
