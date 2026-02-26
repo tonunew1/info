@@ -17,7 +17,7 @@ import base64
 # === Settings ===
 MAIN_KEY = base64.b64decode('WWcmdGMlREV1aDYlWmNeOA==')
 MAIN_IV = base64.b64decode('Nm95WkRyMjJFM3ljaGpNJQ==')
-RELEASEVERSION = "OB51"
+RELEASEVERSION = "OB52"
 USERAGENT = "Dalvik/2.1.0 (Linux; U; Android 13; CPH2095 Build/RKQ1.211119.001)"
 
 # === Flask App Setup ===
@@ -46,7 +46,7 @@ async def json_to_proto(json_data: str, proto_message: Message) -> bytes:
 
 def get_account_credentials() -> str:
     # শুধু BD এর UID + password
-    return "uid=4198040669&password=BD19CBC961423CF5E2A006920242703DAE4F5F7607BC37D52A0E54F96927D46E"
+    return "uid=4309154116&password=202FD1F18952280156D17820F661DCCA96EBED08E82A00F4EDCBF1D93DA21EEE"
 
 # === Token Generation ===
 async def get_access_token(account: str):
@@ -197,6 +197,7 @@ if __name__ == '__main__':
 
     # Flask চালু
     app.run(host='0.0.0.0', port=5000, debug=True)
+
 
 
 
